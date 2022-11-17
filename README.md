@@ -17,3 +17,8 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 ## 분류
 ### Java
 - [StringTokenizer와 split()](https://github.com/Jinwon-Dev/TIL/blob/main/Java/stringTokenizer-and-split.md)
+
+</br>
+
+### Network
+- [HTTP Status Code](https://github.com/Jinwon-Dev/TIL/blob/main/Network/http-status-code.md)
