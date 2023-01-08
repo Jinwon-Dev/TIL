@@ -32,3 +32,4 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 2. 운영체제 구조](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/operating-system-structures.md)
     - [Chapter 3. 프로세스](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/process.md)
     - [Chapter 4. 스레드와 병행성](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/threads-and-concurrency.md)
+    - [Chapter 5. CPU 스케줄링](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/cpu-scheduling.md)
