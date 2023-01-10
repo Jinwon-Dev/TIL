@@ -1076,3 +1076,122 @@
     - `pthread_attr_setschedpolicy(pthread_attr_t *attr, int policy)`
 
 ---
+
+## 7. 운영체제 사례들
+
+→ ***Linux, Windows 및 Solaris 운영체제의 스케줄링 정책에 대해 알아본다.***
+
+</br>
+
+### Linux 스케줄링
+
+→ ***각 클래스별로 특정 우선순위를 부여받는 스케줄링 클래스에 기반을 두고 동작한다.***
+
+- 시스템과 프로세스의 요구 조건에 따라 커널은 다른 스케줄링 알고리즘을 수용할 수 있다.
+
+</br>
+
+> **표준 Linux 커널**
+
+1. CFS 스케줄링 알고리즘을 사용하는 디폴트 스케줄링 클래스를 구현한다.
+2. 실시간 스케줄링 클래스의 두 스케줄링 클래스를 구현한다.
+
+</br>
+
+> **CFS 스케줄러**
+
+→ ***상대 우선순위에 상응하는 시간 할당량의 길이가 정해져 있는 경직된 규칙을 사용하지 않고, 각 태스크에 CPU 처리시간의 비율을 할당한다.***
+
+- 이 비율은 각 태스크에 할당된 nice(-20 ~ 19)값에 기반을 두고 계산된다.
+- 이산 값을 가지는 시간 할당량을 사용하지 않고, 목적 지연시간을 찾는다.
+    - 목적 지연시간 : 다른 모든 수행 가능한 태스크가 적어도 한 번씩은 실행할 수 있는 시간 간격
+
+</br>
+
+- CFS는 직접 우선순위를 할당하지 않고, 태스크별로 태스크가 실행된 시간을 기록하여 가상 실행 시간을 유지한다.
+
+<img width="436" alt="image" src="https://user-images.githubusercontent.com/106216912/211482573-4e97ca40-b2ce-47d0-a01a-5f4493a340dc.png">
+
+</br>
+
+> **CFS 스케줄러는 처리 코어 간의 부하를 균등하게 유지하면서도 NUMA를 인식하고, 스레드 이주를 최소화하는 정교한 기술을 사용하여 부하 균등화를 지원한다.**
+ 
+- 스레드의 우선순위와 평균 CPU 이용률의 조합으로 각 스레드의 부하를 정의한다.
+
+<img width="296" alt="image" src="https://user-images.githubusercontent.com/106216912/211482640-b3987eb0-9a0b-4c5f-838d-182df8f20c61.png">
+
+→ CFS의 기본 전략은 **가장 낮은 수준의 층부터 시작하여, 도메인 안에서 부하의 균형을 맞추는 것**이다.
+
+</br>
+
+### Windows 스케줄링
+
+→ ***Windows는 우선순위에 기반을 둔 선점 스케줄링 알고리즘을 사용한다.***
+
+- 가장 높은 우선순위의 스레드가 항상 실행되도록 보장한다.
+    - **디스패처(dispatcher)** : Windows 커널 중 스케줄링을 담당하는 부분
+
+</br>
+
+<img width="432" alt="image" src="https://user-images.githubusercontent.com/106216912/211482766-3c68f465-6716-425f-aa1e-20de3878031d.png">
+
+> **디스패처는 스레드의 실행 순서를 정하기 위해 32단계의 우선순위를 두고 있다.**
+
+- **가변 클래스** : 1 ~ 15까지의 우선순위
+- **실시간 클래스** : 16 ~ 31까지의 우선순위
+- idle 스레드 : 준비 상태에 있는 스레드가 없으면 실행시키는 특수한 스레드
+
+</br>
+
+> **Windows API는 프로세스들이 속할 수 있는 몇 가지 우선순위 클래스를 제공한다.**
+
+- `IDLE PRIORITY CLASS`
+- `BELOW NORMAL PRIORITY CLASS`
+- `NORMAL PRIORITY CLASS`
+- `ABOVE NORMAL PRIORITY CLASS`
+- `HIGH PRIORITY CLASS`
+- `REALTIME PRIORITY CLASS`
+
+</br>
+
+> **우선순위 클래스의 스레드들도 상대적인 우선순위를 갖는다.**
+
+- IDLE
+- LOWEST
+- BELOW NORMAL
+- NORMAL
+- ABOVE NORMAL
+- HIGHEST
+- TIME CRITICAL
+
+</br>
+
+### Solaris 스케줄링
+
+→ ***Solaris는 우선순위 기반 스레드 스케줄링을 사용한다.***
+
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/106216912/211482936-40332624-25de-46cb-a132-35ffa25b3f72.png">
+
+1. 시분할(TS)
+2. 대화형(IA)
+3. 실시간(RT)
+4. 시스템(SYS)
+5. 공평 공유(FSS)
+6. 고정 우선순위(FP)
+
+</br>
+
+→ **각 클래스에는 서로 다른 우선순위와 서로 다른 스케줄링 알고리즘이 존재한다.**
+
+- **실시간 클래스의 스레드에 가장 높은 우선순위**가 주어진다.
+
+</br>
+
+> **프로세스의 디폴트 스케줄링 클래스는 시분할이다.**
+
+- 다단계 피드백 큐를 사용하여 동적으로 우선순위를 바꾸고, 서로 다른 타임 슬라이스를 할당한다.
+    - 우선순위와 타임 슬라이스 사이에서는 반비례 관계가 존재한다.
+
+<img width="435" alt="image" src="https://user-images.githubusercontent.com/106216912/211483051-a6b3a892-013b-48b3-9b57-6f7f7cc9a82e.png">
+
+---
