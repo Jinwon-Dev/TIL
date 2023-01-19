@@ -361,3 +361,138 @@
 - 락이 오랜 시간 동안 유지되어야 한다면, 세마포 또는 mutex 락을 사용하는게 적절하다.
 
 ---
+
+## 3. POSIX 동기화
+
+→ ***POSIX API는 사용자 수준에서 프로그래머가 사용할 수 있으며, 특정 운영체제 커널의 일부가 아니다.***
+
+- 이 API는 UNIX, Linux 및 macOS 시스템의 개발자가 스레드를 생성하고 동기화하는 데 널리 사용된다.
+
+</br>
+
+### POSIX mutex 락
+
+→ ***Mutex 락은 Pthreads에서 사용할 수 있는 기본적인 동기화 기법을 제공한다.***
+
+- Mutex 락은 **코드의 임계구역을 보호하기 위해 사용**된다.
+    - 즉, 스레드는 **임계구역에 진입하기 전에 락을 획득하고, 임계구역에서 나갈 때 락을 방출**한다.
+
+</br>
+
+- Pthreads는 mutex 락의 데이터 형으로 `pthread_mutex_t` 데이터 형을 사용한다.
+    - Mutex는 `pthread_mutex_init()` 함수를 호출하여 생성한다.
+    - 첫 번째 매개변수는 mutex를 가리키는 포인터이고, 두 번째 매개변수로 `NULL` 을 전달하여 속성을 디폴트 값으로 초기화한다.
+
+<img width="341" alt="image" src="https://user-images.githubusercontent.com/106216912/213492830-48699e06-d398-4907-bebb-cabdf18f7c77.png">
+
+</br>
+
+- Mutex는 `pthread_mutex_lock()` 과 `pthread_mutex_unlock()` 을 통해 각각 획득되고 방출된다.
+    - Mutex 락을 획득할 수 없는 경우에 획득을 요청한 스레드는 락을 가지고 있는 스레드가 `pthread_mutex_unlock()` 을 호출할 때까지 봉쇄된다.
+
+<img width="243" alt="image" src="https://user-images.githubusercontent.com/106216912/213492954-1b677a57-d534-4551-a5c1-7696e050ab79.png">
+
+</br>
+
+→ 모든 mutex 함수는 연산이 성공했을 경우 `0` 을, 오류가 발생한 경우에는 오류 코드를 반환한다.
+
+</br>
+
+### POSIX 세마포
+
+→ ***세마포는 Pthreads 표준의 일부분이 POSIX SEM 확장판의 일부이지만, Pthreads를 구현하는 많은 시스템은 세마포도 함께 제공한다.***
+
+- POSIX는 **기명(named)** 과 **무명(unnamed)** 의 두 유형의 세마포를 명기하고 있다.
+    - 기본적으로 이 두 가지는 매우 유사하지만, 프로세스 간에 생성 및 공유되는 방식이 다르다.
+
+</br>
+
+> **POSIX 기명 세마포(POSIX Named Semaphores)**
+
+→ ***`sem_open()` 함수는 POSIX 기명 세마포를 생성하고 여는 데 사용된다.***
+
+<img width="387" alt="image" src="https://user-images.githubusercontent.com/106216912/213493193-907b07ab-a63b-4e9b-922c-bfc7beec0d7a.png">
+
+</br>
+
+- **기명 세마포의 장점**
+    - 여러 관련 없는 프로세스가 **세마포 이름만 참조하여 동기화 기법으로 공통 세마포를 동기화 기법으로 쉽게 사용**할 수 있다.
+
+</br>
+
+- 고전적인 `wait()` 및 `signal()` 연산을 POSIX에서는 `sem_wait()` 및 `sem_post()` 로 선언한다.
+    - ex) 기명 세마포를 사용해서 임계구역을 보호하는 방법
+
+<img width="244" alt="image" src="https://user-images.githubusercontent.com/106216912/213493312-241e4090-fdd6-4ce6-a38d-5805323327f5.png">
+
+</br>
+
+→ Linux 및 macOS 시스템은 모두 POSIX라는 세마포를 제공한다.
+
+</br>
+
+> **POSIX 무명 세마포(POSIX Unnamed Semaphores)**
+> 
+
+→ **무명 세마포는 `sem_init()` 함수를 사용해서 생성 및 초기화되며, 세 개의 매개 변수가 전달된다.**
+
+1. 세마포를 가리키는 포인터
+2. 공유 수준을 나타내는 플래그
+3. 세마포의 초기 값
+
+</br>
+
+<img width="387" alt="image" src="https://user-images.githubusercontent.com/106216912/213493461-9d44549a-9002-4b26-aa1c-fd7a97ada8c6.png">
+
+- 플래그 `0` 을 전달하면 세마포를 만든 프로세스에 속하는 스레드만 이 세마포를 공유할 수 있다.
+    - 또한, 세마포를 값 `1` 로 초기화한다.
+
+</br>
+
+- POSIX 무명 세마포는 기명 세마포와 동일한 `sem_wait()` 및 `sem_post()` 연산을 사용한다.
+    - ex) 무명 세마포를 사용해서 임계구역을 보호하는 방법
+
+<img width="245" alt="image" src="https://user-images.githubusercontent.com/106216912/213493566-b722f619-6149-412a-8752-71ece348eb98.png">
+
+</br>
+
+→ 모든 세마포 함수는 성공하면 `0` 을, 오류 조건이 발생하면 `0` 이 아닌 값을 반환한다.
+
+</br>
+
+### POSIX 조건 변수
+
+→ ***Pthread의 조건 변수는 모니터 문맥 내에서 사용되며, 모니터가 데이터 무결성을 보장하는 락 기법을 제공한다.***
+
+- Pthread는 일반적으로 C 프로그램에서 사용되며, 조건 변수에 mutex 락을 연결하여 락킹을 제공한다.
+
+</br>
+
+- Pthread의 조건 변수는 `pthread_cond_t` 데이터 유형을 사용하고, `pthread_cond_init()` 함수를 사용해서 초기화된다.
+    - ex) 조건 변수 및 관련 mutex 락을 생성하고 초기화한다.
+
+<img width="242" alt="image" src="https://user-images.githubusercontent.com/106216912/213493740-f9a6c80a-6982-4863-aa18-8dd63975bde8.png">
+
+</br>
+
+- `pthread_cond_wait()` 함수는 조건 변수를 기다리는 데 사용된다.
+    - ex) Pthread 조건 변수를 사용해서 스레드가 조건 `a == b` 가 `true` 가 될 때까지 대기하는 방법
+
+<img width="293" alt="image" src="https://user-images.githubusercontent.com/106216912/213493907-fc176927-647e-419c-9677-8a77c9216af1.png">
+
+</br>
+
+- 조건 변수와 연관된 mutex 락은 `pthread_cond_wait()` 함수가 호출되기 전에 획득되어야 한다.
+    - 가능한 경쟁 조건으로부터 조건 절의 데이터를 보호하는 데 사용된다.
+
+</br>
+
+- 공유 데이터를 변경하는 스레드는 `pthread_cond_signal()` 함수를 호출해서 조건 변수를 기다리는 하나의 스레드에 신호할 수 있다.
+
+<img width="239" alt="image" src="https://user-images.githubusercontent.com/106216912/213494045-2a789254-18e4-483a-9c0a-6178738acc1c.png">
+
+</br>
+
+→ Mutex 락이 해제되면 신호받은 스레드는 mutex 락의 소유자가 되고, `pthread_cond_wait()` 호출에서부터 제어를 넘겨받아 실행을 재개한다.
+
+---
