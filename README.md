@@ -39,3 +39,4 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 5. CPU 스케줄링](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/cpu-scheduling.md)
     - [Chapter 6. 동기화 도구들](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/synchronization-tools.md)
     - [Chapter 7. 동기화 예제](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/synchronization-examples.md)
+    - [Chapter 8. 교착 상태](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/deadlocks.md)
