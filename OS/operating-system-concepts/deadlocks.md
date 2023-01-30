@@ -52,3 +52,69 @@
 → **교착 상태** : ***한 스레드 집합 내의 모든 스레드가 그 집합 내의 다른 스레드에 의해서만 발생될 수 있는 이벤트를 기다리는 현상***
 
 ---
+
+## 2. 다중 스레드 응용에서의 교착 상태
+
+→ ***먼저, POSIX mutex 락을 사용해서 다중 스레드 Pthread 프로그램에서 어떻게 교착 상태가 발생할 수 있는지 알아본다.***
+
+- `pthread_mutex_init()` 함수는 가용한 mutex를 초기화한다.
+    - Mutex 락은 각각 `pthread_mutex_lock()` 과 `pthread_mutex_unlock()` 함수를 이용해서 획득되고, 방출된다.
+
+</br>
+
+- 한 스레드가 잠긴 mutex 락을 획득하려고 시도하면, `pthread_mutex_lock()` 함수 호출은 mutex 락의 소유주가 `pthread_mutex_unlock()` 함수를 호출할 때까지 이 스레드를 봉쇄한다.
+
+</br>
+
+> **두 mutex 락이 다음과 같은 코드에 의해 생성되고, 초기화된다.**
+
+<img width="288" alt="image" src="https://user-images.githubusercontent.com/106216912/215436924-4d1e95dd-2697-4565-beaf-e76a073fe779.png">
+
+- `thread_one` 과 `thread_two` 가 생성되고, mutex 락에 대한 접근 권한을 갖는다.
+    - 두 스레드는 각각 `do_work_one()` 과 `do_work_two()` 함수를 실행한다.
+
+</br>
+
+- `thread_one` 은 첫 번째로 `first_mutex` , 두 번째로는 `second_mutex` 순서로 mutex 락을 획득하려고 한다.
+    - 동시에 `thread_two` 는 첫 번째로 `second_mutex` , 두 번째로는 `first_mutex` 순서로 mutex 락을 획득하려 한다.
+
+</br>
+
+→ `thread_one` 이 `first_mutex` 를 획득하고, `thread_two` 가 `second_mutex` 를 획득하게 되면 교착 상태가 가능하다.
+
+- 교착 상태가 가능하더라도, `thread_two` 가 락을 획득하려고 시도하기 전에 `thread_one` 이 `first_mutex` 와 `second_mutex` 를 획득하고 방출할 수 있다면, 교착 상태는 발생하지 않는다.
+
+</br>
+
+### 라이브락
+
+→ ***라이브락(livelock)은 또 다른 형태의 라이브니스 장애이다.***
+
+- 교착 상태와 유사하게 두 개 이상의 스레드가 진행되는 것을 방해하지만, 진행할 수 없는 이유가 다르다.
+    - 라이브락은 **실패한 행동을 계속해서 시도할 때 발생**한다.
+
+</br>
+
+> **라이브락은 `Pthreads` 의 `pthread_mutex_trylock()` 함수로 설명할 수 있다.**
+
+→ ***이 함수는 봉쇄되지 않고, mutex 락을 획득하려고 시도한다.***
+
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/106216912/215437252-19431d26-62d3-463b-b94a-85f5c77f11c6.png">
+
+- `thread_one` 이 `first_mutex` 를 획득한 후, `thread two` 가 `second_mutex` 를 획득하면 이 상황을 라이브락으로 이어질 수 있다.
+    - 그런 다음 각 스레드는 `pthread_mutex_trylock()` 을 호출하여 실패하고, 각자의 락을 해제한 후 동일한 행동을 무한정 반복한다.
+
+</br>
+
+> **라이브락은 일반적으로 스레드가 실패한 작업을 동시에 재시도할 때 발생한다.**
+
+→ ***따라서, 일반적으로 각 스레드가 실패한 행동을 재시도하는 시간을 무작위로 정하면 회피할 수 있다.***
+
+- 네트워크 충돌이 발생할 때, Ethernet 네트워크가 취하는 접근법이다.
+    - 충돌이 발생한 직후에 패킷을 재전송하려고 시도하는 대신, 충돌한 호스트는 임의의 시간 동안 한 발 뒤로 물러선다.
+
+</br>
+
+→ ***라이브락은 교착 상태만큼 흔하지는 않지만, 병행 응용 프로그램을 설계할 때 어려운 문제이고, 특정 스케줄링 상황에서만 발생할 수 있다.***
+
+---
