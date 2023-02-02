@@ -18,6 +18,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 
 ## Java
 - [StringTokenizer와 split()](https://github.com/Jinwon-Dev/TIL/blob/main/Java/stringTokenizer-and-split.md)
+- [SOLID 원칙](https://github.com/Jinwon-Dev/TIL/blob/main/Java/SOLID-%EC%9B%90%EC%B9%99.pdf)
 
 </br>
 
