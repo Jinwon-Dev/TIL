@@ -27,6 +27,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 1. JPA 소개](https://jinwonyoon.notion.site/1-JPA-42a6db19a07345478fa9982a38df4706)
     - [Chapter 2. JPA 시작](https://jinwonyoon.notion.site/2-JPA-af0411d173484ffbbc213a676e0ca4a2)
     - [Chapter 3. 영속성 관리](https://jinwonyoon.notion.site/3-791ed72965af41eea897b0e6f2e71a8b)
+    - [Chapter 4. 엔티티 매핑](https://jinwonyoon.notion.site/4-acfb38c37cce46448993da621b80ea03)
 
 </br>
 
