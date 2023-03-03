@@ -29,6 +29,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 3. 영속성 관리](https://jinwonyoon.notion.site/3-791ed72965af41eea897b0e6f2e71a8b)
     - [Chapter 4. 엔티티 매핑](https://jinwonyoon.notion.site/4-acfb38c37cce46448993da621b80ea03)
     - [Chapter 5. 연관관계 매핑 기초](https://jinwonyoon.notion.site/5-1a9a3a25386549b2a9ff3c49bcd44a76)
+    - [Chapter 6. 다양한 연관관계 매핑](https://jinwonyoon.notion.site/6-d6abb513eb2f4027bd029a14a57641c4)
 
 </br>
 
