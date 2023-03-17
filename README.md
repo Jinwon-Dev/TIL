@@ -56,6 +56,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 10. 가상 메모리](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/virtual-memory.md)
     - [Chapter 11. 대용량 저장장치 구조](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/mass-storage-structure.md)
     - [Chapter 12. 입출력 시스템](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/io-system.md)
+    - [Chapter 13. 파일 시스템 인터페이스](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/file-system-interface.md)
 
 </br>
 
