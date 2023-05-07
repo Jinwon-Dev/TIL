@@ -66,6 +66,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 
 ## Clean Code
 - [Chapter 1. 깨끗한 코드](https://jinwonyoon.notion.site/1-9722dd08d61647dd885fc5463bed02d0)
+- [Chapter 2. 의미 있는 이름](https://jinwonyoon.notion.site/2-12f7c1c46ff44e99b2eb339e86dba1a7)
 
 </br>
 
