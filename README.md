@@ -73,3 +73,4 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - ### 원티드 프리온보딩 백엔드 챌린지 5월
     - [홈페이지 링크](https://www.wanted.co.kr/events/pre_challenge_be_7)
     - [Week 1-1 : AWS 인프라 - Cloud Computing, AWS VPC, AWS API Gateway, AWS ELB, AWS S3, AWS CloudFront, AWS Secret Manager](https://jinwonyoon.notion.site/AWS-72822ad14ac549f7baa324102fc07064)
+    - [Week 1-2 : AWS의 가상 서버 관련 서비스 - AWS EC2, AWS Elastic Beanstalk, AWS Fargate, AWS ECR, AWS ECS, AWS Lambda(Serverless)](https://jinwonyoon.notion.site/AWS-909a599e602c472786b12ac73dc5542d)
