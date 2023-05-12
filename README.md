@@ -21,6 +21,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - [SOLID 원칙](https://github.com/Jinwon-Dev/TIL/blob/main/Java/SOLID-%EC%9B%90%EC%B9%99.pdf)
 - ### Modern Java in Action
     - [Chapter 1. 자바 8, 9, 10, 11 : 무슨 일이 일어나고 있는가?](https://jinwonyoon.notion.site/Chapter-1-8-9-10-11-e1d2dab906a74df8b6b30a7f2c42c7c4)
+    - [Chapter 2. 동작 파라미터화 코드 전달하기](https://jinwonyoon.notion.site/Chapter-2-1236396b95714d9baa9bf7ef4875c79b)
 
 </br>
 
