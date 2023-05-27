@@ -24,6 +24,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 2. 동작 파라미터화 코드 전달하기](https://jinwonyoon.notion.site/Chapter-2-1236396b95714d9baa9bf7ef4875c79b)
     - [Chapter 3. 람다 표현식](https://jinwonyoon.notion.site/Chapter-3-da8a2c37559c4e379ca17d28d0dd50d3)
     - [Chapter 4. 스트림 소개](https://jinwonyoon.notion.site/Chapter-4-3d9c1995409c44f69deae9ad904533b5)
+    - [Chapter 5. 스트림 활용](https://jinwonyoon.notion.site/Chapter-5-e6ebe733f36a4bd89b7407faee364dfb)
 
 </br>
 
