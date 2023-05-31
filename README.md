@@ -27,6 +27,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 5. 스트림 활용](https://jinwonyoon.notion.site/Chapter-5-e6ebe733f36a4bd89b7407faee364dfb)
     - [Chapter 7. 병렬 데이터 처리와 성능](https://jinwonyoon.notion.site/Chapter-7-9b816ed51a5649298c34b6c76064a0fb)
     - [Chapter 8. 컬렉션 API 개선](https://jinwonyoon.notion.site/Chapter-8-API-1a6d7e1abfde4721a4f8e4e050a42c2a)
+    - [Chapter 9. 리팩터링, 테스팅, 디버깅](https://jinwonyoon.notion.site/Chapter-9-14a871bb994f49e8b51f759390ba21d4)
 
 </br>
 
