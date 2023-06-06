@@ -48,6 +48,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 ## Software Architecture
 - ### 만들면서 배우는 클린 아키텍처
     - [Chapter 1. 계층형 아키텍처의 문제점은 무엇일까?](https://jinwonyoon.notion.site/Chapter-1-28ee32dc22e845c180a5b2c082df3683?pvs=4)
+    - [Chapter 2. 의존성 역전하기](https://jinwonyoon.notion.site/Chapter-2-f7eea28d98dd4a2b949458e097b57432?pvs=4)
 
 </br>
 
