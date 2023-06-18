@@ -58,6 +58,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - [HTTP Status Code](https://github.com/Jinwon-Dev/TIL/blob/main/Network/http-status-code.md)
 - [MQTT](https://github.com/Jinwon-Dev/TIL/blob/main/Network/mqtt.md)
 - [세션, 쿠키, JWT](https://github.com/Jinwon-Dev/TIL/blob/main/Network/session-cookie-jwt.md)
+- [Load Balancing](https://jinwonyoon.notion.site/c222393f452344ad8b243956097b4de2?pvs=4)
 - ### 모든 개발자를 위한 HTTP 웹 기본 지식
     - [인터넷 네트워크](https://jinwonyoon.notion.site/5cb947e3264b4b13a1603cfbf30765e0)
     - [URI와 웹 브라우저 요청 흐름](https://jinwonyoon.notion.site/URI-47564cc67fd540b7807320dfb62b9984)
