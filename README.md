@@ -30,6 +30,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 9. 리팩터링, 테스팅, 디버깅](https://jinwonyoon.notion.site/Chapter-9-14a871bb994f49e8b51f759390ba21d4)
     - [Chapter 10. 람다를 이용한 도메인 전용 언어](https://jinwonyoon.notion.site/Chapter-10-4247227dd0bb4afdb1881c6a8252fedf?pvs=4)
     - [Chapter 11. null 대신 Optional 클래스](https://jinwonyoon.notion.site/Chapter-11-null-Optional-b21343b9149f43c3a86006c31bc067e6?pvs=4)
+    - [Chapter 13. 디폴트 메서드](https://jinwonyoon.notion.site/Chapter-13-fc2cc7c8d3f34d979f77312cf0e4092a?pvs=4)
 
 </br>
 
