@@ -55,6 +55,12 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 
 </br>
 
+## System Design
+- ### 가상 면접 사례로 배우는 대규모 시스템 설계 기초
+    - [Chapter 1. 사용자 수에 따른 규모 확장성](https://jinwonyoon.notion.site/Chapter-1-b53e55e5ab644b5bb6822beb5cb87e4a?pvs=4)
+
+</br>
+
 ## Network
 - [HTTP Status Code](https://github.com/Jinwon-Dev/TIL/blob/main/Network/http-status-code.md)
 - [MQTT](https://github.com/Jinwon-Dev/TIL/blob/main/Network/mqtt.md)
