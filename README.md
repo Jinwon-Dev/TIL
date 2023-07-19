@@ -63,6 +63,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 1. 사용자 수에 따른 규모 확장성](https://jinwonyoon.notion.site/Chapter-1-b53e55e5ab644b5bb6822beb5cb87e4a?pvs=4)
     - [Chapter 2. 개략적인 규모 측정](https://jinwonyoon.notion.site/Chapter-2-49ad12b41ab94bd1b3f88f427b33340d?pvs=4)
     - [Chapter 3. 시스템 설계 면접 공략법](https://jinwonyoon.notion.site/Chapter-3-cb6ba58f30044b38998509d92b580738?pvs=4)
+    - [Chapter 4. 처리율 제한 장치의 설계](https://jinwonyoon.notion.site/Chapter-4-80a2a5c037f8492596096c3adcd5b101?pvs=4)
 
 </br>
 
