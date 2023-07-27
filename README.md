@@ -65,6 +65,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 3. 시스템 설계 면접 공략법](https://jinwonyoon.notion.site/Chapter-3-cb6ba58f30044b38998509d92b580738?pvs=4)
     - [Chapter 4. 처리율 제한 장치의 설계](https://jinwonyoon.notion.site/Chapter-4-80a2a5c037f8492596096c3adcd5b101?pvs=4)
     - [Chapter 5. 안정 해시 설계](https://jinwonyoon.notion.site/Chapter-5-459e2d08fc8b4487b0bfe9766b9f843c?pvs=4)
+    - [Chapter 6. 키-값 저장소 설계](https://jinwonyoon.notion.site/Chapter-6-2842621c4d4c447e8a091743606e131a?pvs=4)
 
 </br>
 
