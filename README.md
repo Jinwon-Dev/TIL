@@ -69,6 +69,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 7. 분산 시스템을 위한 유일 ID 생성기 설계](https://jinwonyoon.notion.site/Chapter-7-ID-d3f62f95d80147b2b2018231d48e1d18?pvs=4)
     - [Chapter 8. URL 단축기 설계](https://jinwonyoon.notion.site/Chapter-8-URL-0919a0fe17fa41df943317fa6a36fab9?pvs=4)
     - [Chapter 9. 웹 크롤러 설계](https://jinwonyoon.notion.site/Chapter-9-9700909555ce4e1d87bd0008d8f13e17?pvs=4)
+    - [Chapter 10. 알림 시스템 설계](https://jinwonyoon.notion.site/Chapter-10-3b993b2a97ad493cb4eb239a32167487?pvs=4)
 
 </br>
 
