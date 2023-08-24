@@ -44,6 +44,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 5. 연관관계 매핑 기초](https://jinwonyoon.notion.site/5-1a9a3a25386549b2a9ff3c49bcd44a76)
     - [Chapter 6. 다양한 연관관계 매핑](https://jinwonyoon.notion.site/6-d6abb513eb2f4027bd029a14a57641c4)
     - [Chapter 8. 프록시와 연관관계 관리](https://jinwonyoon.notion.site/8-b4e53cbfbe14453fadb3b0904afb1fc7)
+    - [Chapter 10. 객체지향 쿼리 언어 - QueryDSL](https://jinwonyoon.notion.site/10-2a93575abaa54a81b2887bdb886c8734?pvs=4)
 
 </br>
 
