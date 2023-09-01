@@ -114,6 +114,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - [인덱스](https://jinwonyoon.notion.site/a4a3d775576d45848ecff01c668bbe77?pvs=4)
 - [정규화](https://jinwonyoon.notion.site/2d5fa5fde2214f799d16b7fdbb808264?pvs=4)
 - [트랜잭션](https://jinwonyoon.notion.site/3232205424b04c0aa4221367de7d905d?pvs=4)
+- [조인](https://jinwonyoon.notion.site/Join-182316a6dfa64cc28c9c73040a326053?pvs=4)
 
 </br>
 
