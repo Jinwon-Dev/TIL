@@ -32,6 +32,8 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 11. null 대신 Optional 클래스](https://jinwonyoon.notion.site/Chapter-11-null-Optional-b21343b9149f43c3a86006c31bc067e6?pvs=4)
     - [Chapter 13. 디폴트 메서드](https://jinwonyoon.notion.site/Chapter-13-fc2cc7c8d3f34d979f77312cf0e4092a?pvs=4)
     - [Chapter 15. CompletableFuture와 리액티브 프로그래밍 컨셉의 기초](https://jinwonyoon.notion.site/Chapter-15-CompletableFuture-aed8c43be0684deeabd0daa0f5f13c49?pvs=4)
+- ### Effective Java
+    - [Item 1. 생성자 대신 정적 팩터리 메서드를 고려하라](https://jinwonyoon.notion.site/Item-1-1cfb82db13964083a71c6ca2bd688386?pvs=4)
 
 </br>
 
