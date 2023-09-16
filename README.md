@@ -34,6 +34,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Chapter 15. CompletableFuture와 리액티브 프로그래밍 컨셉의 기초](https://jinwonyoon.notion.site/Chapter-15-CompletableFuture-aed8c43be0684deeabd0daa0f5f13c49?pvs=4)
 - ### Effective Java
     - [Item 1. 생성자 대신 정적 팩터리 메서드를 고려하라](https://jinwonyoon.notion.site/Item-1-1cfb82db13964083a71c6ca2bd688386?pvs=4)
+    - [Item 2. 생성자에 매개변수가 많다면 빌더를 고려하라](https://jinwonyoon.notion.site/Item-2-1318884e435b40b8aec0c6b63b247c8a?pvs=4)
 
 </br>
 
