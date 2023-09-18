@@ -35,9 +35,10 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - ### Effective Java
     - [Item 1. 생성자 대신 정적 팩터리 메서드를 고려하라](https://jinwonyoon.notion.site/Item-1-1cfb82db13964083a71c6ca2bd688386?pvs=4)
     - [Item 2. 생성자에 매개변수가 많다면 빌더를 고려하라](https://jinwonyoon.notion.site/Item-2-1318884e435b40b8aec0c6b63b247c8a?pvs=4)
-    - [Item 3. private 생성자나 열거 타입으로 싱글텀임을 보증하라](https://jinwonyoon.notion.site/Item-3-private-428a18b4586d4ccdb21647a4cf53711a?pvs=4)
+    - [Item 3. private 생성자나 열거 타입으로 싱글턴임을 보증하라](https://jinwonyoon.notion.site/Item-3-private-428a18b4586d4ccdb21647a4cf53711a?pvs=4)
     - [Item 4. 인스턴스화를 막으려거든 private 생성자를 사용하라](https://jinwonyoon.notion.site/Item-4-private-32aabc70e91441a9bbaabf520b9db681?pvs=4)
     - [Item 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://jinwonyoon.notion.site/Item-5-64454d15d42d423da2e485bd6ee11217?pvs=4)
+    - [Item 6. 불필요한 객체 생성을 피하라](https://jinwonyoon.notion.site/Item-6-8acfb769a78643aab9db64941b882346?pvs=4)
 
 </br>
 
