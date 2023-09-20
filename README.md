@@ -40,6 +40,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Item 5. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://jinwonyoon.notion.site/Item-5-64454d15d42d423da2e485bd6ee11217?pvs=4)
     - [Item 6. 불필요한 객체 생성을 피하라](https://jinwonyoon.notion.site/Item-6-8acfb769a78643aab9db64941b882346?pvs=4)
     - [Item 7. 다 쓴 객체 참조를 해제하라](https://jinwonyoon.notion.site/Item-7-ee9265442d8541ccbd1712e55295174a?pvs=4)
+    - [Item 8. finalizer와 cleaner 사용을 피하라](https://jinwonyoon.notion.site/Item-8-finalizer-cleaner-8876f8e2c918496a8ad70eee596ab35d?pvs=4)
 
 </br>
 
