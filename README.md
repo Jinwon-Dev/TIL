@@ -42,6 +42,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Item 7. 다 쓴 객체 참조를 해제하라](https://jinwonyoon.notion.site/Item-7-ee9265442d8541ccbd1712e55295174a?pvs=4)
     - [Item 8. finalizer와 cleaner 사용을 피하라](https://jinwonyoon.notion.site/Item-8-finalizer-cleaner-8876f8e2c918496a8ad70eee596ab35d?pvs=4)
     - [Item 9. try-finally보다는 try-with-resources를 사용하라](https://jinwonyoon.notion.site/Item-9-try-finally-try-with-resources-f8a29451ea404c13ae5a41df6da0c1d4?pvs=4)
+    - [Item 10. equals는 일반 규약을 지켜 재정의하라](https://jinwonyoon.notion.site/Item-10-equals-caeed647270c4bc2afe1c5b16727e5e4?pvs=4)
 
 </br>
 
