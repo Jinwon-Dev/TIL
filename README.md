@@ -45,6 +45,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Item 10. equals는 일반 규약을 지켜 재정의하라](https://jinwonyoon.notion.site/Item-10-equals-caeed647270c4bc2afe1c5b16727e5e4?pvs=4)
     - [Item 11. equals를 재정의하려거든 hashCode도 재정의하라](https://jinwonyoon.notion.site/Item-11-equals-hashCode-0e18db0e2de349f892935ca215cb47f7?pvs=4)
     - [Item 12. toString을 항상 재정의하라](https://jinwonyoon.notion.site/Item-12-toString-474e8d0ae48e4180a27d881346fc91d6?pvs=4)
+    - [Item 13. clone 재정의는 주의해서 진행하라](https://jinwonyoon.notion.site/Item-13-clone-f10f90af4f194f448ef7ce596ce7370c?pvs=4)
 
 </br>
 
