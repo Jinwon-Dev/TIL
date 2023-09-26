@@ -47,6 +47,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Item 12. toString을 항상 재정의하라](https://jinwonyoon.notion.site/Item-12-toString-474e8d0ae48e4180a27d881346fc91d6?pvs=4)
     - [Item 13. clone 재정의는 주의해서 진행하라](https://jinwonyoon.notion.site/Item-13-clone-f10f90af4f194f448ef7ce596ce7370c?pvs=4)
     - [Item 14. Comparable을 구현할지 고려하라](https://jinwonyoon.notion.site/Item-14-Comparable-68a41de451a14801a8aca2872d075f7e?pvs=4)
+    - [Item 15. 클래스와 멤버의 접근 권한을 최소화하라](https://jinwonyoon.notion.site/Item-15-8402bec6fd354d2aab6b1340bdc594bc?pvs=4)
 
 </br>
 
