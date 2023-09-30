@@ -50,6 +50,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Item 15. 클래스와 멤버의 접근 권한을 최소화하라](https://jinwonyoon.notion.site/Item-15-8402bec6fd354d2aab6b1340bdc594bc?pvs=4)
     - [Item 16. public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](https://jinwonyoon.notion.site/Item-16-public-public-f386fb49efb34c88bfae685824cbb91d?pvs=4)
     - [Item 17. 변경 가능성을 최소화하라](https://jinwonyoon.notion.site/Item-17-55976ff5a464445dbeca66aa59e10f9f?pvs=4)
+    - [Item 18. 상속보다는 컴포지션을 사용하라](https://jinwonyoon.notion.site/Item-18-663cd3958d5a48fd974fa0e72f958763?pvs=4)
 
 </br>
 
