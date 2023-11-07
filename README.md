@@ -112,6 +112,7 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
 - [페이징 & 세그멘테이션](https://jinwonyoon.notion.site/cff074373fbf4e8c9fedd594f49e30c5?pvs=4)
 - [교착 상태](https://jinwonyoon.notion.site/4ddc1898fcb341c9876a6b1fb28e43d8?pvs=4)
 - [CPU 스케줄링](https://jinwonyoon.notion.site/CPU-808301a329a14e4386d9a945c17c418b?pvs=4)
+- [문맥 교환](https://jinwonyoon.notion.site/b9d4bf21d89b4be6bf5d274a26d876b4?pvs=4)
 - ### Operating System Concepts
     - [Chapter 1. 서론](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/introduction.md)
     - [Chapter 2. 운영체제 구조](https://github.com/Jinwon-Dev/TIL/blob/main/OS/operating-system-concepts/operating-system-structures.md)
