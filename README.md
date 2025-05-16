@@ -152,3 +152,9 @@ Today I Learned인데 날짜를 표기하지 않는 이유는 날짜를 신경쓰지 않고 꾸준하기 위
     - [Week 1-1 : AWS 인프라 - Cloud Computing, AWS VPC, AWS API Gateway, AWS ELB, AWS S3, AWS CloudFront, AWS Secret Manager](https://jinwonyoon.notion.site/AWS-72822ad14ac549f7baa324102fc07064)
     - [Week 1-2 : AWS의 가상 서버 관련 서비스 - AWS EC2, AWS Elastic Beanstalk, AWS Fargate, AWS ECR, AWS ECS, AWS Lambda(Serverless)](https://jinwonyoon.notion.site/AWS-909a599e602c472786b12ac73dc5542d)
     - [Week 2-1 : AWS의 메세지 큐 서비스 - AWS SQS, AWS Kinesis](https://jinwonyoon.notion.site/AWS-23baa468b6434b7e82d55a13244164cb)
+
+</br>
+
+## ETC
+- ### 주니어 백엔드 개발자가 반드시 알아야 할 실무 지식
+    - [느려진 서비스, 어디부터 봐야 할까](https://jinwonyoon.notion.site/1f56a89b208780a4af43cc88f23c5ea2?pvs=4)
